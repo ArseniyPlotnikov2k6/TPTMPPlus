@@ -141,19 +141,11 @@ end
 		local client=clients[id]
 		print(client.nick.." joined "..room)
 		if not rooms[room] then
-			if not room == "dev" then
-				rooms[room]={}
-				print("Created room '"..room.."'")
-			else
-				if contains(config.admin,client.nick) then
-					rooms[room]={}
-					print("Created DEV ROOM '"..room.."'")
-				else
-					serverMsg(client,"This is a dev room!")
-				end
-			end
+			rooms[room]={}
+			print("Created room '"..room.."'")
 		end
 		client.room=room
+
 
 		--hook system (check if user is allowed)
 		if onChat(client, 1, room) then
