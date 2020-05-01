@@ -8,7 +8,8 @@ config.versionminormax=5
 config.scriptversion=4
 config.pingtimeout=120
 config.admin = {}
-config.admin[1] = "BomberPlayz"
-config.admin[2] = "zqasd"
-config.admin[3] = "Geniusz1"
+config.admin[1] = "zqasd"
+config.admin[2] = "Geniusz1"
+config.admin[3] = "ArseniyPlotnikov2k6"
+config.admin[4] = "Palpatine333"
 return config
